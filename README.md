@@ -49,9 +49,16 @@ Instructions on how to use them in your own application are linked below.
 | Quill | [https://quilljs.com/][PlDb] |
 | Vanilla JS Datepicker | [https://mymth.github.io/vanillajs-datepicker/][PlGh] |
 
-## Updates
+## Updates & Installation
 
 Once the system is ready for beta test, we will notify you.
+
+- To install, clone this repo and then create file ``` _config.php ``` in the main directory
+- The add code
+
+```
+<?php $base_url = "your_project_base_url";
+```
 
 ## License
 
