@@ -6,3 +6,6 @@
 # ignore code scanning from package-lock
 package-lock.json
 composer.js
+_config.php
+
+
