@@ -1,0 +1,8 @@
+/vscode
+.DS_Store
+/node_modules
+/vendor
+
+# ignore code scanning from package-lock
+package-lock.json
+composer.js
