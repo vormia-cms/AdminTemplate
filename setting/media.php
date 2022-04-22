@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+<?php include_once '../_head.php'; ?>
+<!-- End Head -->
+
+<body>
+    <!-- Open App -->
+    <div id="app">
+
+        <!-- Vrm Topbar -->
+        <div id="vrm-topbar">
+            <!-- TopBar -->
+            <?php include_once '../_topbar.php'; ?>
+            <!-- End TopBar -->
+        </div>
+        <!-- End Vrm Topbar -->
+
+        <!-- Vrm App -->
+        <div class="vrm-app">
+            <!-- Vrm Sidebar -->
+            <div id="vrm-sidebar">
+                <!-- Nav -->
+                <?php include_once '../_nav.php'; ?>
+                <!-- End Nav -->
+            </div>
+            <!-- End Vrm Sidebar -->
+
+            <!-- Vrm Content -->
+            <div id="vrm-main">
+                <!-- Main Page -->
+                <div id="main">
+                    <div class="vrm-mainsection">
+                        <!-- Page Breadcrumb Section -->
+                        <div class="page-heading">
+                            <div class="page-title">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 order-md-1 order-last">
+                                        <h3>
+                                            Media :
+                                        </h3>
+                                    </div>
+                                    <div class="col-12 col-md-6 order-md-2 order-first">
+                                        <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
+                                            <ol class="breadcrumb">
+                                                <li class="breadcrumb-item"><a href="<?= $base_url; ?>/index.php">Dashboard</a></li>
+                                                <li class="breadcrumb-item active" aria-current="page">Settings</li>
+                                            </ol>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Page Breadcrumb Section -->
+
+                        <!-- The Page -->
+                        <div class="page-content vrm-sett-media" id="sett-media">
+                            <section class="row">
+                                <div class="col-8 col-lg-8 col-md-8">
+                                    <div class="card">
+
+                                        <div class="card-body px-0">
+                                            <div class="divider divider-left">
+                                                <div class="divider-text">Compression</div>
+                                            </div>
+
+                                            <div class="vrm-sett-compress">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <label for="" class="mb-2">Compression</label>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio" name="compress" compress="false" checked>
+                                                                    <label class="form-check-label" for="">
+                                                                        No Compression
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio" name="compress" compress="true">
+                                                                    <label class="form-check-label" for="">
+                                                                        Apply Global Compression
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <select class="form-select form-select-sm" id="compress" disabled>
+                                                                        <option>30%</option>
+                                                                        <option>35%</option>
+                                                                        <option>50%</option>
+                                                                        <option>65%</option>
+                                                                        <option>80%</option>
+                                                                        <option>85%</option>
+                                                                        <option>90%</option>
+                                                                        <option>100%</option>
+                                                                    </select>
+                                                                    <small>How hard should the compression be?</small>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="divider divider-left mt-0">
+                                                <div class="divider-text">Watermark</div>
+                                            </div>
+
+                                            <div class="vrm-sett-watermark">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <label for="" class="mb-2">Watermark</label>
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio" name="watermark" watermark="false" checked>
+                                                                    <label class="form-check-label" for="">
+                                                                        No Watermark
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio" name="watermark" watermark="text">
+                                                                    <label class="form-check-label" for="">
+                                                                        Add Text Watermark
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-4">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio" name="watermark" watermark="image">
+                                                                    <label class="form-check-label" for="">
+                                                                        Add Image Watermark
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mt-2">
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label for="title">Allignment</label>
+                                                            <select disabled class="form-select form-select-sm watermark">
+                                                                <option>Top Left</option>
+                                                                <option>Bottom Left</option>
+                                                                <option>Centert</option>
+                                                                <option>Top Right</option>
+                                                                <option>Bottom Right</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label for="title">Text</label>
+                                                            <input type="text" disabled class="form-control form-control-sm watermark-text" placeholder="Powered By Vormia">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label for="title">Font Color</label>
+                                                            <input type="color" disabled class="form-control watermark-text" placeholder="Transparent" value="#ffffff">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label for="title">Opacity</label>
+                                                            <input type="number" disabled class="form-control form-control-sm watermark-text" placeholder="">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label for="title">Size</label>
+                                                            <input type="text" min="1" disabled class="form-control form-control-sm watermark-text" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-7">
+                                                        <div class="form-group">
+                                                            <label for="title">BG Color</label>
+                                                            <div class="row">
+                                                                <div class="col-md-3">
+                                                                    <input disabled type="color" class="form-control watermark" placeholder="Transparent" value="#ffffff">
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <div class="form-check">
+                                                                        <input disabled class="form-check-input watermark" type="checkbox" name="watermark-bg">
+                                                                        <label class="form-check-label vrm-font-13" for="">
+                                                                            No BG
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-3">
+                                                                    <div class="form-group">
+                                                                        <input disabled title="Background Opacity" type="number" class="form-control form-control-sm watermark" placeholder="">
+                                                                        <small class="text-muted text-center">BG Opacity</small>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <div class="form-group">
+                                                                        <input disabled title="Border Radius" type="text" class="form-control form-control-sm watermark" placeholder="tp rt bm lt">
+                                                                        <small class="text-muted text-center">Border Radius</small>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-5">
+                                                        <label for="title">Watermark Image</label>
+                                                        <div class="input-group">
+                                                            <label class="input-group-text" for=""><i class="bi bi-upload"></i></label>
+                                                            <input disabled type="file" class="form-control watermark-image" accept="image/png, image/jpg, image/jpeg" id="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="divider divider-left mt-0">
+                                                <div class="divider-text">Sizes</div>
+                                            </div>
+
+                                            <div class="vrm-sett-size">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="form-group row align-items-center">
+                                                            <div class="col-12">
+                                                                <label for="" class="col-form-label">Thumbnails Dimensions:</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label for="title">Width <small>px</small></label>
+                                                            <input type="number" class="form-control" placeholder="150">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label for="title">Height <small>px</small></label>
+                                                            <input type="number" class="form-control" placeholder="150">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-4">
+                                                        <div class="form-check vrm-rem-mt-2">
+                                                            <input class="form-check-input" type="checkbox" name="">
+                                                            <label class="form-check-label" for="">
+                                                                Maintain Aspect Ration
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="form-group row align-items-center">
+                                                            <div class="col-12">
+                                                                <label for="" class="col-form-label">Small Dimensions:</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label for="title">Width <small>px</small></label>
+                                                            <input type="number" class="form-control" placeholder="280">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label for="title">Height <small>px</small></label>
+                                                            <input type="number" class="form-control" placeholder="280">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-4">
+                                                        <div class="form-check vrm-rem-mt-2">
+                                                            <input class="form-check-input" type="checkbox" name="">
+                                                            <label class="form-check-label" for="">
+                                                                Maintain Aspect Ration
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="form-group row align-items-center">
+                                                            <div class="col-12">
+                                                                <label for="" class="col-form-label">Medium Dimensions:</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label for="title">Width <small>px</small></label>
+                                                            <input type="number" class="form-control" placeholder="400">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label for="title">Height <small>px</small></label>
+                                                            <input type="number" class="form-control" placeholder="400">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-4">
+                                                        <div class="form-check vrm-rem-mt-2">
+                                                            <input class="form-check-input" type="checkbox" name="">
+                                                            <label class="form-check-label" for="">
+                                                                Maintain Aspect Ration
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="form-group row align-items-center">
+                                                            <div class="col-12">
+                                                                <label for="" class="col-form-label">Large Dimensions:</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label for="title">Width <small>px</small></label>
+                                                            <input type="number" class="form-control" placeholder="1024">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label for="title">Height <small>px</small></label>
+                                                            <input type="number" class="form-control" placeholder="1024">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-4">
+                                                        <div class="form-check vrm-rem-mt-2">
+                                                            <input class="form-check-input" type="checkbox" name="">
+                                                            <label class="form-check-label" for="">
+                                                                Maintain Aspect Ration
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="divider divider-left mt-0">
+                                                <div class="divider-text">Upload</div>
+                                            </div>
+
+                                            <div class="vrm-sett-upload">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" name="">
+                                                            <label class="form-check-label" for="">
+                                                                Encypt Image File Name
+                                                            </label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-8">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" name="directory">
+                                                            <label class="form-check-label" for="">
+                                                                Arrange uploads into year- and month-based folders
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Action -->
+                                        <div class="card-footer">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <button type="button" class="btn btn-sm btn-success vrm-width-50 float-end">
+                                                        <i class="bi bi-cursor-fill"></i> Save Settings
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <!-- End The Page -->
+                    </div>
+
+                    <!-- Credit -->
+                    <?php include '../_credit.php'; ?>
+                    <!-- End Credit -->
+                </div>
+                <!-- End Main Page -->
+
+            </div>
+            <!-- End Vrm Content -->
+        </div>
+        <!-- End Vrm App -->
+
+    </div>
+    <!-- Close App -->
+
+    <!-- Nav -->
+    <?php include_once '../_footer.php'; ?>
+    <!-- End Nav -->
+</body>
+
+</html>
