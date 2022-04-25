@@ -15,7 +15,7 @@
             <!-- <div class="d-flex justify-content-between"> -->
             <div class="vrm-topcar-control">
                 <!-- Add Ul list with icons -->
-                <ul class="vrm-topbar-icons">
+                <ul class="vrm-topbar-icons float-end">
                     <li class="vrm-topbar-icon">
                         <a href="<?= $base_url; ?>/admin/vrm/index.php">
                             <i class="bi bi-envelope"></i>
