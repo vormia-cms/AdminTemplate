@@ -39,56 +39,56 @@ body {
     color: color(red);
     font-size: 10px;
   }
+}
 
-  // TopBar - Position
-  div#vrm-topbar {
-    background-color: color(spe-unique-dark-1) !important;
-    border-bottom: 2px solid color(red);
-    padding: 0 2% 0% 0.7rem !important;
-    height: 35px !important;
-    position: fixed;
-    width: 100%;
-    z-index: 9999;
+// TopBar - Position
+div#vrm-topbar {
+  background-color: color(spe-unique-dark-1) !important;
+  border-bottom: 2px solid color(red);
+  padding: 0 2% 0% 0.7rem !important;
+  height: 35px !important;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 
-    div.vrm-topbar-section {
-      display: contents;
-    }
+  div.vrm-topbar-section {
+    display: contents;
+  }
+}
+
+// App - Position
+div.vrm-app {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+  -webkit-font-smoothing: subpixel-antialiased;
+
+  // Sidebar - Position
+  div#vrm-sidebar {
+    margin-top: 32px;
+    width: 13vw !important;
+    height: 100vh;
+
+    display: inline-block !important;
+    position: fixed !important;
   }
 
-  // App - Position
-  div.vrm-app {
-    width: 100%;
-    height: auto;
-    min-height: 100%;
-    width: 100%;
-    position: relative;
-    -webkit-font-smoothing: subpixel-antialiased;
+  // Main - Position
+  div#vrm-main {
+    background-color: color(wp-grey-1);
+    margin: 0% !important;
+    padding: 3rem 2rem 1rem 0.5em;
+    height: 100vh;
 
-    // Sidebar - Position
-    div#vrm-sidebar {
-      margin-top: 32px;
-      width: 13vw !important;
-      height: 100vh;
+    width: 85vw !important;
+    display: inline-block !important;
+    position: absolute !important;
+    right: 0 !important;
 
-      display: inline-block !important;
-      position: fixed !important;
-    }
-
-    // Main - Position
-    div#vrm-main {
-      background-color: color(wp-grey-1);
-      margin: 0% !important;
-      padding: 3rem 2rem 1rem 0.5em;
-      height: 100vh;
-
-      width: 85vw !important;
-      display: inline-block !important;
-      position: absolute !important;
-      right: 0 !important;
-
-      div#main {
-        display: block !important;
-      }
+    div#main {
+      display: block !important;
     }
   }
 }
@@ -145,10 +145,25 @@ div#topbar-section {
           font-size: 1.2em;
           i {
           }
+
+          span {
+            font-size: 10px;
+            // color: color(yellow);
+            top: 27% !important;
+            padding: 2px;
+            border-radius: 0px !important;
+          }
         }
 
         &:last-child {
           padding-right: 0px;
+          span {
+            font-size: 1.2em;
+            color: color(white);
+            top: 0px !important;
+            padding: 0px;
+            border-radius: 0px !important;
+          }
         }
       }
     }

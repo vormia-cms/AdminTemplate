@@ -1,7 +1,7 @@
 <!-- TopBar -->
 <div class="vrm-topbar-section" id="topbar-section">
     <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="col-4">
             <div class="vrm-topbar-logo">
                 <div class="logo vrm-logo-text-admin">
                     <a href="<?= $base_url; ?>/index.php">
@@ -11,29 +11,34 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-8 col-md-8 col-sm-12">
+        <div class="col-8">
             <!-- <div class="d-flex justify-content-between"> -->
             <div class="vrm-topcar-control">
                 <!-- Add Ul list with icons -->
                 <ul class="vrm-topbar-icons float-end">
                     <li class="vrm-topbar-icon">
                         <a href="<?= $base_url; ?>/admin/vrm/index.php">
-                            <i class="bi bi-envelope"></i>
+                            <i class="bi bi-chat-text"></i>
+                            <span class="position-absolute top-0 translate-middle badge rounded-pill bg-danger">20</span>
                         </a>
                     </li>
                     <li class="vrm-topbar-icon">
                         <a href="<?= $base_url; ?>/admin/vrm/index.php">
                             <i class="bi bi-bell"></i>
+                            <span class="position-absolute top-0 translate-middle badge rounded-pill bg-danger">
+                                100 <sup>+</sup>
+                            </span>
                         </a>
                     </li>
                     <li class="vrm-topbar-icon">
-                        <a href="<?= $base_url; ?>/login.php">
-                            <i class="bi bi-box-arrow-right"></i>
+                        <a href="<?= $base_url; ?>" target="_blank">
+                            <i class="bi bi-box-arrow-up-right"></i>
                         </a>
                     </li>
                     <li class="vrm-topbar-icon">
                         <a href="<?= $base_url; ?>/admin/vrm/index.php">
-                            <i class="bi bi-person-badge"></i> Artistan
+                            <i class="bi bi-person-badge"></i>
+                            <span>Artistan</span>
                         </a>
                     </li>
                 </ul>

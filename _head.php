@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="<?= $base_url; ?>/assets/vendors/choices.js/choices.min.css" />
 
     <!-- Vrm Admin -->
-    <link rel="stylesheet" href="<?= $base_url; ?>/admin/vrm/css/vrm-admin.min.css">
+    <link rel="stylesheet" href="<?= $base_url; ?>/admin/vrm/css/vrm-admin.min.css?<?= time(); ?>">
     <link rel="stylesheet" href="<?= $base_url; ?>/admin/vrm/css/vrm-responsive.min.css?<?= time(); ?>">
 
 </head>
