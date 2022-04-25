@@ -132,3 +132,12 @@
     }
   }
 }
+
+/**
+** Sidebar Wrapper
+*/
+@mixin sidebar-wrapper {
+  .sidebar-wrapper {
+    width: auto !important;
+  }
+}

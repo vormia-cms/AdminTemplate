@@ -10,6 +10,7 @@
 @include fontSize();
 @include marginSet;
 @include paddingSet;
+@include sidebar-wrapper;
 
 /**
 ** Todo:
@@ -62,7 +63,7 @@ div.vrm-app {
   height: auto;
   min-height: 100%;
   width: 100%;
-  position: relative;
+  // position: relative;
   -webkit-font-smoothing: subpixel-antialiased;
 
   // Sidebar - Position
@@ -72,7 +73,7 @@ div.vrm-app {
     height: 100vh;
 
     display: inline-block !important;
-    position: fixed !important;
+    // position: fixed !important;
   }
 
   // Main - Position
@@ -84,7 +85,7 @@ div.vrm-app {
 
     width: 85vw !important;
     display: inline-block !important;
-    position: absolute !important;
+    // position: absolute !important;
     right: 0 !important;
 
     div#main {
@@ -180,10 +181,10 @@ div#sidebar {
     background-color: color(spe-unique-dark-1) !important;
     transition: left 0.5s ease-out;
     //Sidebar Width
-    width: 100% !important;
+    // width: 100% !important;
     top: 4% !important;
 
-    position: initial;
+    // position: initial;
     overflow-y: auto;
     z-index: 10;
     bottom: 0;
