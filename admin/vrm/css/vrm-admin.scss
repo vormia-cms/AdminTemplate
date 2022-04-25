@@ -44,6 +44,7 @@ body {
   div#vrm-topbar {
     background-color: color(spe-unique-dark-1) !important;
     border-bottom: 2px solid color(red);
+    padding: 0 2% 0% 0.7rem !important;
     height: 35px !important;
     position: fixed;
     width: 100%;
@@ -100,7 +101,7 @@ body {
 div#topbar-section {
   // TopBar Logo
   .vrm-topbar-logo {
-    padding: 0rem 9.5px 0rem !important;
+    padding: 0rem 0rem 0rem !important;
     a {
       span {
         color: color(yellow);
@@ -127,6 +128,28 @@ div#topbar-section {
         font-size: 1.2rem !important;
         font-family: "Monoton", cursive !important;
         vertical-align: middle !important;
+      }
+    }
+  }
+
+  // TopBar Controls
+  .vrm-topcar-control {
+    ul.vrm-topbar-icons {
+      padding-left: 0px;
+      list-style: none;
+      li {
+        display: inline;
+        padding: 0 7.5%;
+        a {
+          color: color(white);
+          font-size: 1.2em;
+          i {
+          }
+        }
+
+        &:last-child {
+          padding-right: 0px;
+        }
       }
     }
   }

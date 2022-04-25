@@ -22,13 +22,14 @@
     <link rel="stylesheet" href="<?= $base_url; ?>/assets/vendors/quill/quill.snow.css">
 
     <!-- DatePicker -->
-    <link rel="stylesheet" href="<?= $base_url; ?>/admin/datepicker/css/datepicker-bs5.min.css?<?= time(); ?>">
-    <link rel="stylesheet" href="<?= $base_url; ?>/admin/datepicker/css/datepicker.min.css?<?= time(); ?>">
+    <link rel="stylesheet" href="<?= $base_url; ?>/admin/datepicker/css/datepicker-bs5.min.css">
+    <link rel="stylesheet" href="<?= $base_url; ?>/admin/datepicker/css/datepicker.min.css">
 
     <!-- Select -->
     <link rel="stylesheet" href="<?= $base_url; ?>/assets/vendors/choices.js/choices.min.css" />
 
     <!-- Vrm Admin -->
-    <link rel="stylesheet" href="<?= $base_url; ?>/admin/vrm/css/vrm-admin.min.css?<?= time(); ?>">
+    <link rel="stylesheet" href="<?= $base_url; ?>/admin/vrm/css/vrm-admin.min.css">
+    <link rel="stylesheet" href="<?= $base_url; ?>/admin/vrm/css/vrm-responsive.min.css?<?= time(); ?>">
 
 </head>
