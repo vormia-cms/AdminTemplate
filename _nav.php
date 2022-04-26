@@ -17,7 +17,7 @@
                 <section class="vrm-nav-section" menu-type="content">
                     <li class="sidebar-item has-sub active">
                         <a href="#" class='sidebar-link'>
-                            <i class="bi bi-file-earmark-word-fill vrm-color-dark-green vrm-icon"></i>
+                            <i class="bi bi-file-earmark-word-fill vrm-icon"></i>
                             <span>Blogs</span>
                         </a>
                         <ul class="submenu active">
@@ -41,14 +41,14 @@
 
                     <li class="sidebar-item">
                         <a href="<?= $base_url; ?>/page/list.php" class='sidebar-link'>
-                            <i class="bi bi-file-earmark-text-fill vrm-color-dark-green vrm-icon"></i>
+                            <i class="bi bi-file-earmark-text-fill vrm-icon"></i>
                             <span>Pages</span>
                         </a>
                     </li>
 
                     <li class="sidebar-item  ">
                         <a href="" class='sidebar-link'>
-                            <i class="bi bi-image-fill vrm-color-blue vrm-icon"></i>
+                            <i class="bi bi-image-fill vrm-icon"></i>
                             <span>Gallery</span>
                         </a>
                     </li>
@@ -61,10 +61,10 @@
                 <section class="vrm-nav-section" menu-type="enhance">
                     <li class="sidebar-item  has-sub">
                         <a href="#" class='sidebar-link'>
-                            <i class="bi bi-sliders vrm-color-dark-orange vrm-icon"></i>
+                            <i class="bi bi-sliders vrm-icon"></i>
                             <span>Tools</span>
                         </a>
-                        <ul class="submenu ">
+                        <ul class="submenu submenu-ul">
                             <li class="submenu-item ">
                                 <a href="<?= $base_url; ?>/tools/inheritance/manage.php">Inheritances</a>
                             </li>
@@ -85,7 +85,7 @@
 
                     <li class="sidebar-item  has-sub">
                         <a href="#" class='sidebar-link'>
-                            <i class="bi bi-boxes vrm-color-dark-orange vrm-icon"></i>
+                            <i class="bi bi-boxes vrm-icon"></i>
                             <span>Extensions</span>
                         </a>
                         <ul class="submenu ">
@@ -107,7 +107,7 @@
                 <section class="vrm-nav-section" menu-type="control">
                     <li class="sidebar-item  has-sub">
                         <a href="#" class='sidebar-link'>
-                            <i class="bi bi-person-lines-fill vrm-color-purple vrm-icon"></i>
+                            <i class="bi bi-person-lines-fill vrm-icon"></i>
                             <span>Users</span>
                         </a>
                         <ul class="submenu ">
@@ -125,7 +125,7 @@
 
                     <li class="sidebar-item  has-sub">
                         <a href="#" class='sidebar-link'>
-                            <i class="bi bi-gear-fill vrm-color-dark-purple vrm-icon"></i>
+                            <i class="bi bi-gear-fill vrm-icon"></i>
                             <span>Controls</span>
                         </a>
                         <ul class="submenu ">
@@ -156,7 +156,7 @@
                 <section class="vrm-nav-section" menu-type="setting">
                     <li class="sidebar-item  has-sub">
                         <a href="#" class='sidebar-link'>
-                            <i class="bi bi-wrench vrm-color-red vrm-icon"></i>
+                            <i class="bi bi-wrench vrm-icon"></i>
                             <span>Settings</span>
                         </a>
                         <ul class="submenu ">
@@ -203,7 +203,7 @@
 
                 <li class="sidebar-item  ">
                     <a href="#" class='sidebar-link'>
-                        <i class="bi bi-life-preserver vrm-color-blue vrm-icon"></i>
+                        <i class="bi bi-life-preserver vrm-icon"></i>
                         <span>Documentation</span>
                     </a>
                 </li>
