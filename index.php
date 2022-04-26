@@ -32,12 +32,6 @@
                 <!-- Main Paage -->
                 <div id="main">
                     <div class="vrm-mainsection">
-                        <header class="mb-2 mt-3">
-                            <a href="#" class="burger-btn d-block d-xl-none vrm-color-red fw-bold fa-bold">
-                                <i class="bi bi-justify fs-3"></i>
-                            </a>
-                        </header>
-
                         <div class="page-heading">
                             <h3>Profile Statistics</h3>
                         </div>

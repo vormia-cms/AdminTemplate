@@ -4,7 +4,12 @@
         <div class="col-4">
             <div class="vrm-topbar-logo">
                 <div class="logo vrm-logo-text-admin">
-                    <a href="<?= $base_url; ?>/index.php">
+                    <!-- Humberger Menu -->
+                    <a href="#" class="burger-btn d-inline d-xl-none vrm-color-red fw-bold fa-bold vrm-mobile-menu">
+                        <span><i class="bi bi-justify fs-3"></i></span>
+                    </a>
+
+                    <a href="<?= $base_url; ?>/index.php" class="vrm-logo-link">
                         <img src="<?= $base_url; ?>/admin/vrm/img/logo/logo-blue.png" alt="Logo" srcset="">
                         <span>Vormia</span>
                     </a>

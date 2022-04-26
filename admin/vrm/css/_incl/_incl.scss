@@ -138,6 +138,10 @@
 */
 @mixin sidebar-wrapper {
   .sidebar-wrapper {
-    width: auto !important;
+    width: 13vw !important;
+
+    width: 15% !important;
+
+    position: fixed !important;
   }
 }

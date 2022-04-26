@@ -6,9 +6,9 @@
   div#vrm-topbar {
     div#topbar-section {
       div.vrm-logo-text-admin {
-        a {
+        a.vrm-logo-link {
           img {
-            width: 20% !important;
+            width: 35% !important;
           }
           span {
             display: none !important;
@@ -19,7 +19,7 @@
       div.vrm-topcar-control {
         ul {
           li {
-            padding: 0 2vw;
+            padding: 0 2.5vw;
             &:last-child {
               a {
                 i {
@@ -42,25 +42,202 @@
     ** Sidebar
     */
     div#vrm-sidebar {
-      width: 10% !important;
+      //   width: 10% !important;
       div#sidebar {
         div.vrm-admin-sidebar {
+          width: 45% !important;
           div.sidebar-menu {
+            margin-top: 20%;
             ul.menu {
               li.sidebar-item {
                 a {
-                  padding: 0.7rem 1rem !important;
+                  //   padding: 0.7rem 1rem !important;
                   i {
-                    font-size: 1.2rem !important;
+                    // font-size: 1.7rem !important;
                   }
                   span {
-                    display: none !important;
                   }
                 }
 
                 &.has-sub {
                   li {
-                    display: none;
+                  }
+                  .sidebar-link {
+                    &::after {
+                    }
+                  }
+                  ul.submenu {
+                    li.submenu-item {
+                      //   display: block !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    /**
+    ** Main
+    */
+    div#vrm-main {
+      width: 100% !important;
+    }
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) (landscape tablets, 768px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  div#vrm-topbar {
+    div#topbar-section {
+      div.vrm-logo-text-admin {
+        a.vrm-logo-link {
+          img {
+            display: none !important;
+          }
+          span {
+          }
+        }
+      }
+
+      div.vrm-topcar-control {
+        ul {
+          li {
+            padding: 0 2.5vw;
+            &:last-child {
+              a {
+                i {
+                  color: color(yellow) !important;
+                }
+                span {
+                  display: none !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // MAIN APP
+  div.vrm-app {
+    /**
+    ** Sidebar
+    */
+    div#vrm-sidebar {
+      //   width: 10% !important;
+      div#sidebar {
+        div.vrm-admin-sidebar {
+          width: 30% !important;
+          div.sidebar-menu {
+            margin-top: 20%;
+            ul.menu {
+              li.sidebar-item {
+                a {
+                  //   padding: 0.7rem 1rem !important;
+                  i {
+                    // font-size: 1.7rem !important;
+                  }
+                  span {
+                  }
+                }
+
+                &.has-sub {
+                  li {
+                  }
+                  .sidebar-link {
+                    &::after {
+                    }
+                  }
+                  ul.submenu {
+                    li.submenu-item {
+                      //   display: block !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    /**
+    ** Main
+    */
+    div#vrm-main {
+      width: 100% !important;
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  div#vrm-topbar {
+    div#topbar-section {
+      div.vrm-logo-text-admin {
+        a.vrm-logo-link {
+          img {
+            width: 12% !important;
+          }
+          span {
+          }
+        }
+      }
+
+      div.vrm-topcar-control {
+        ul {
+          li {
+            padding: 0 2.5vw;
+            &:last-child {
+              a {
+                i {
+                  color: color(yellow) !important;
+                }
+                span {
+                  display: none !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // MAIN APP
+  div.vrm-app {
+    /**
+    ** Sidebar
+    */
+    div#vrm-sidebar {
+      //   width: 10% !important;
+      div#sidebar {
+        div.vrm-admin-sidebar {
+          width: 5% !important;
+          div.sidebar-menu {
+            margin-top: 65%;
+            ul.menu {
+              li.sidebar-item {
+                margin-top: 0px !important;
+                a {
+                  //   padding: 0.7rem 1rem !important;
+                  padding: 24% 24% !important;
+                  i {
+                    font-size: 1.3rem !important;
+                    height: 0% !important;
+                  }
+                  span {
+                    display: none !important;
+                  }
+                  &::after {
+                    top: 50% !important;
+                  }
+                }
+
+                &.has-sub {
+                  li {
                   }
                   .sidebar-link {
                     &::after {
@@ -68,78 +245,45 @@
                     }
                   }
                   ul.submenu {
-                    display: block !important;
-                    background-color: color(red) !important;
-                    left: 50%;
                     li.submenu-item {
-                      display: block !important;
+                      display: none !important;
+                    }
+                  }
+                }
+
+                &:hover {
+                  background-color: color(spe-blue-1) !important;
+                  i {
+                    color: color(white) !important;
+                  }
+                }
+
+                &.active {
+                  &:hover {
+                    i {
+                      color: color(white) !important;
                     }
                   }
                 }
               }
+
+              hr {
+                margin-top: 0rem !important;
+                margin-bottom: 0px !important;
+              }
             }
           }
         }
       }
     }
-  }
-}
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  div#vrm-topbar {
-    div#topbar-section {
-      div.vrm-logo-text-admin {
-        a {
-          img {
-            display: none;
-          }
-        }
-      }
-    }
-  }
 
-  /**
-    ** Sidebar
+    /**
+    ** Main
     */
-  div#vrm-sidebar {
-    width: 10% !important;
-    div#sidebar {
-      div.vrm-admin-sidebar {
-        div.sidebar-menu {
-          ul.menu {
-            li.sidebar-item {
-              a {
-                i {
-                }
-                span {
-                }
-              }
-
-              &.has-sub {
-              }
-            }
-          }
-        }
-      }
+    div#vrm-main {
+      width: 100% !important;
     }
   }
-}
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  div#vrm-topbar {
-    div#topbar-section {
-      div.vrm-logo-text-admin {
-        a {
-          img {
-            display: none !important;
-          }
-        }
-      }
-    }
-  }
-}
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
