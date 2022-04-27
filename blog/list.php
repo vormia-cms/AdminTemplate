@@ -36,7 +36,7 @@
                         <div class="page-heading">
                             <div class="page-title">
                                 <div class="row">
-                                    <div class="col-12 col-md-6 order-md-1 order-last">
+                                    <div class="col-6">
                                         <h3>
                                             Blogs :
                                             <a href="<?= $base_url; ?>/blog/add.php" class="btn btn-primary">
@@ -45,8 +45,8 @@
                                             </a>
                                         </h3>
                                     </div>
-                                    <div class="col-12 col-md-6 order-md-2 order-first">
-                                        <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
+                                    <div class="col-6">
+                                        <nav aria-label="breadcrumb" class="breadcrumb-header float-end float-lg-end">
                                             <ol class="breadcrumb">
                                                 <li class="breadcrumb-item"><a href="<?= $base_url; ?>/index.php">Dashboard</a></li>
                                                 <li class="breadcrumb-item active" aria-current="page">Blogs</li>
@@ -67,7 +67,7 @@
                                             <!-- Table control -->
                                             <div class="vrm-controls px-1" section-type="controls">
                                                 <div class="row">
-                                                    <div class="col-md-2 mb-1">
+                                                    <div class="col-lg-2 col-md-2 mb-1 col-6">
                                                         <div class="input-group mb-3">
                                                             <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Bulk Action</button>
                                                             <ul class="dropdown-menu">
@@ -81,10 +81,10 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-md-8">
+                                                    <div class="col-lg-8 col-md-6 d-none d-md-block">
                                                         <div class="row">
                                                             <!-- Sort -->
-                                                            <div class="col-md-2">
+                                                            <div class="col-lg-2 col-md-4 d-none d-md-block">
                                                                 <div class="input-group mb-3">
                                                                     <select class="form-select custom-select">
                                                                         <option selected value="1">All</option>
@@ -94,7 +94,7 @@
                                                                 </div>
                                                             </div>
 
-                                                            <div class="col-md-2">
+                                                            <div class="col-lg-2 col-md-4 d-none d-md-block">
                                                                 <div class="input-group mb-3">
                                                                     <select class="form-select custom-select">
                                                                         <option selected>Dates</option>
@@ -105,7 +105,7 @@
                                                                 </div>
                                                             </div>
 
-                                                            <div class="col-md-2">
+                                                            <div class="col-lg-2 d-none d-lg-block">
                                                                 <div class="input-group mb-3">
                                                                     <select class="form-select custom-select">
                                                                         <option selected>Category</option>
@@ -116,7 +116,7 @@
                                                                 </div>
                                                             </div>
 
-                                                            <div class="col-md-2">
+                                                            <div class="col-lg-2 col-md-4">
                                                                 <div class="input-group mb-3">
                                                                     <button class="btn btn-outline-info w-100">Apply</button>
                                                                 </div>
@@ -125,7 +125,7 @@
 
                                                     </div>
 
-                                                    <div class="col-md-2">
+                                                    <div class="col-lg-2 col-md-4 col-12">
                                                         <form action="">
                                                             <div class="input-group mb-3">
                                                                 <input type="text" class="form-control" placeholder="Search Blogs">
@@ -147,37 +147,43 @@
                                                     <!-- Head -->
                                                     <thead>
                                                         <tr>
-                                                            <th>
+                                                            <td class="vrm-column vrm-check-column">
                                                                 <div class="form-check">
                                                                     <div class="checkbox">
-                                                                        <input type="checkbox" class="form-check-input">
+                                                                        <input type="checkbox" class="form-check-input vrm-td-check" name="sel[]">
                                                                     </div>
                                                                 </div>
-                                                            </th>
-                                                            <th>ID</th>
-                                                            <th>Title</th>
-                                                            <th>Author</th>
-                                                            <th>Category</th>
-                                                            <th>Tags</th>
-                                                            <th>Comments</th>
-                                                            <th>Published</th>
+                                                            </td>
+                                                            <th class="vrm-column vrm-th-primary">ID</th>
+                                                            <th class="vrm-column vrm-th-primary">Title</th>
+                                                            <th class="vrm-column">Author</th>
+                                                            <th class="vrm-column">Category</th>
+                                                            <th class="vrm-column">Tags</th>
+                                                            <th class="vrm-column">Comments</th>
+                                                            <th class="vrm-column">Published</th>
                                                         </tr>
                                                     </thead>
                                                     <!-- Body -->
                                                     <tbody>
                                                         <tr>
-                                                            <td>
+                                                            <th class="vrm-column vrm-check-column">
                                                                 <div class="form-check">
                                                                     <div class="checkbox">
-                                                                        <input type="checkbox" class="form-check-input">
+                                                                        <input type="checkbox" class="form-check-input vrm-td-check" name="sel[]">
                                                                     </div>
                                                                 </div>
-                                                            </td>
-                                                            <td class="text-bold-500">20</td>
-                                                            <td>
-                                                                <a href="<?= $base_url; ?>/blog/edit.php">
-                                                                    Hello welcome to the new vormia blog
-                                                                </a>
+                                                            </th>
+                                                            <td class="vrm-column text-bold-500 vrm-th-primary" vrm-colname="ID">20</td>
+                                                            <td class="vrm-column vrm-th-primary vrm-td-title" vrm-colname="Title">
+                                                                <div class="vrm-td-div">
+                                                                    <a href="<?= $base_url; ?>/blog/edit.php">
+                                                                        Hello welcome to the new vormia blog welcome to the new vormiawelcome to the new vormia
+                                                                    </a>
+
+                                                                    <button class="vrm-tr-more-btn">
+                                                                        <i class="bi bi-arrow-down-circle-fill"></i>
+                                                                    </button>
+                                                                </div>
                                                                 <div class="row my-2">
                                                                     <div class="action">
                                                                         <span>
@@ -203,53 +209,60 @@
                                                                     </div>
                                                                 </div>
                                                             </td>
-                                                            <td>
+                                                            <td class="vrm-column" vrm-colname="Author">
                                                                 <span>
                                                                     <a href="">
                                                                         admin
                                                                     </a>
                                                                 </span>
                                                             </td>
-                                                            <td>
+                                                            <td class="vrm-column" vrm-colname="Category">
                                                                 <span>
                                                                     <a href="">
                                                                         Uncategorized
                                                                     </a>
                                                                 </span>
                                                             </td>
-                                                            <td>
+                                                            <td class="vrm-column" vrm-colname="Tags">
                                                                 <span>
                                                                     <a href="">vormia</a>
                                                                     <a href="">laravel</a>
                                                                     <a href="">vormia</a>
                                                                 </span>
                                                             </td>
-                                                            <td>
+                                                            <td class="vrm-column" vrm-colname="Comments">
                                                                 <span>
                                                                     <a href="<?= $base_url; ?>/comment/list.php">
                                                                         <i class="bi bi-chat-right-dots"> 1 </i>
                                                                     </a>
                                                                 </span>
                                                             </td>
-                                                            <td class="published">
+                                                            <td class="vrm-column published" vrm-colname="Published">
                                                                 <p>2022/03/21 at 8:59 am</p>
                                                                 <p>Visibility: Public</p>
                                                                 <p>Status: Active</p>
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td>
+                                                            <th class="vrm-column vrm-check-column">
                                                                 <div class="form-check">
                                                                     <div class="checkbox">
-                                                                        <input type="checkbox" class="form-check-input">
+                                                                        <input type="checkbox" class="form-check-input vrm-td-check" name="sel[]">
                                                                     </div>
                                                                 </div>
-                                                            </td>
-                                                            <td class="text-bold-500">32</td>
-                                                            <td>
-                                                                <a href="<?= $base_url; ?>/blog/edit.php">
-                                                                    We close the core cms chapter and...
-                                                                </a>
+                                                            </th>
+                                                            <td class="vrm-column text-bold-500 vrm-th-primary" vrm-colname="ID">32</td>
+                                                            <td class="vrm-column vrm-th-primary vrm-td-title" vrm-colname="Title">
+                                                                <div class="vrm-td-div">
+                                                                    <a href="<?= $base_url; ?>/blog/edit.php" class="vrm-td-title-link">
+                                                                        We close the core cms chapter and...
+                                                                    </a>
+
+                                                                    <button class="vrm-tr-more-btn">
+                                                                        <i class="bi bi-arrow-down-circle-fill"></i>
+                                                                    </button>
+                                                                </div>
+
                                                                 <div class="row my-2">
                                                                     <div class="action">
                                                                         <span>
@@ -276,49 +289,55 @@
                                                                     </div>
                                                                 </div>
                                                             </td>
-                                                            <td>
+                                                            <td class="vrm-column" vrm-colname="Author">
                                                                 <span>
                                                                     <a href="">
                                                                         admin
                                                                     </a>
                                                                 </span>
                                                             </td>
-                                                            <td>
+                                                            <td class="vrm-column" vrm-colname="Category">
                                                                 <span>
                                                                     <a href="">
                                                                         Core CMS
                                                                     </a>
                                                                 </span>
                                                             </td>
-                                                            <td>
+                                                            <td class="vrm-column" vrm-colname="Tags">
                                                                 <span>-</span>
                                                             </td>
-                                                            <td>
+                                                            <td class="vrm-column" vrm-colname="Comments">
                                                                 <span>
                                                                     <a href="<?= $base_url; ?>/comment/list.php">
                                                                         <i class="bi bi-chat-right-dots"> 2 </i>
                                                                     </a>
                                                                 </span>
                                                             </td>
-                                                            <td class="published">
+                                                            <td class="vrm-column published" vrm-colname="Published">
                                                                 <p>2022/03/21 at 8:59 am</p>
                                                                 <p>Visibility: Hidden</p>
                                                                 <p>Status: Deactivated</p>
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td>
+                                                            <th class="vrm-column vrm-check-column">
                                                                 <div class="form-check">
                                                                     <div class="checkbox">
-                                                                        <input type="checkbox" class="form-check-input">
+                                                                        <input type="checkbox" class="form-check-input vrm-td-check" name="sel[]">
                                                                     </div>
                                                                 </div>
-                                                            </td>
-                                                            <td class="text-bold-500">33</td>
-                                                            <td>
-                                                                <a href="<?= $base_url; ?>/blog/edit.php">
-                                                                    It bootcamp ready to go
-                                                                </a>
+                                                            </th>
+                                                            <td class="vrm-column text-bold-500 vrm-th-primary" vrm-colname="ID">337777</td>
+                                                            <td class="vrm-column vrm-th-primary vrm-td-title" vrm-colname="Title">
+                                                                <div class="vrm-td-div">
+                                                                    <a href="<?= $base_url; ?>/blog/edit.php">
+                                                                        It bootcamp ready to go
+                                                                    </a>
+
+                                                                    <button class="vrm-tr-more-btn">
+                                                                        <i class="bi bi-arrow-down-circle-fill"></i>
+                                                                    </button>
+                                                                </div>
                                                                 <div class="row my-2">
                                                                     <div class="action">
                                                                         <span>
@@ -345,33 +364,33 @@
                                                                     </div>
                                                                 </div>
                                                             </td>
-                                                            <td>
+                                                            <td class="vrm-column" vrm-colname="Author">
                                                                 <span>
                                                                     <a href="">
                                                                         admin
                                                                     </a>
                                                                 </span>
                                                             </td>
-                                                            <td>
+                                                            <td class="vrm-column" vrm-colname="Category">
                                                                 <span>
                                                                     <a href="">
                                                                         Bootcamp
                                                                     </a>
                                                                 </span>
                                                             </td>
-                                                            <td>
+                                                            <td class="vrm-column" vrm-colname="Tags">
                                                                 <span>
                                                                     <a href="">bootcamp</a>
                                                                     <a href="">vormia</a>
                                                                     <a href="">it</a>
                                                                 </span>
                                                             </td>
-                                                            <td>
+                                                            <td class="vrm-column" vrm-colname="Comments">
                                                                 <span>
                                                                     <i class="bi bi-chat-right-dots"> 0</i>
                                                                 </span>
                                                             </td>
-                                                            <td class="published">
+                                                            <td class="vrm-column published" vrm-colname="Published">
                                                                 <p>2022/03/21 at 8:59 am</p>
                                                                 <p>Visibility: Private</p>
                                                                 <p>Status: Active</p>
@@ -381,20 +400,20 @@
                                                     <!-- Footer -->
                                                     <tfoot>
                                                         <tr>
-                                                            <th>
+                                                            <td class="vrm-column vrm-check-column">
                                                                 <div class="form-check">
                                                                     <div class="checkbox">
-                                                                        <input type="checkbox" class="form-check-input">
+                                                                        <input type="checkbox" class="form-check-input vrm-td-check" name="sel[]">
                                                                     </div>
                                                                 </div>
-                                                            </th>
-                                                            <th>ID</th>
-                                                            <th>Title</th>
-                                                            <th>Author</th>
-                                                            <th>Category</th>
-                                                            <th>Tags</th>
-                                                            <th>Comments</th>
-                                                            <th>Published</th>
+                                                            </td>
+                                                            <th class="vrm-column vrm-th-primary">ID</th>
+                                                            <th class="vrm-column vrm-th-primary">Title</th>
+                                                            <th class="vrm-column">Author</th>
+                                                            <th class="vrm-column">Category</th>
+                                                            <th class="vrm-column">Tags</th>
+                                                            <th class="vrm-column">Comments</th>
+                                                            <th class="vrm-column">Published</th>
                                                         </tr>
                                                     </tfoot>
                                                 </table>
@@ -405,7 +424,7 @@
 
                                                     <nav aria-label="navigation">
                                                         <ul class="pagination pagination-primary">
-                                                            <li class="page-item disabled"><a class="page-link" href="#">First</a></li>
+                                                            <li class="page-item disabled d-none d-md-block"><a class="page-link" href="#">First</a></li>
                                                             <li class="page-item disabled">
                                                                 <a class="page-link" href="#">
                                                                     <span aria-hidden="true"><i class="bi bi-chevron-left"></i></span>
@@ -417,7 +436,7 @@
                                                                     <span aria-hidden="true"><i class="bi bi-chevron-right"></i></span>
                                                                 </a>
                                                             </li>
-                                                            <li class="page-item active"><a class="page-link" href="#">Last</a></li>
+                                                            <li class="page-item active d-none d-md-block"><a class="page-link" href="#">Last</a></li>
                                                         </ul>
                                                     </nav>
                                                 </div>

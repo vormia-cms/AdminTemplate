@@ -345,6 +345,11 @@ div#sidebar {
     ** Vormia Table
     */
     table.vrm-table {
+      // Hide this button
+      .vrm-tr-more-btn {
+        display: none;
+      }
+
       text-align: left;
       thead,
       tfoot {
