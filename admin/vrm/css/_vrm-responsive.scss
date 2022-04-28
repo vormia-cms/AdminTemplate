@@ -1,15 +1,8 @@
 // Include Color
 @import "_incl/colors";
 
-// Dimensions
-$xs: 0;
-$sm: 576px;
-$md: 768px;
-$lg: 992px;
-$xl: 1200px;
-$xxl: 1400px;
-
-@mixin sm-devices {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
   div#vrm-topbar {
     div#topbar-section {
       div.vrm-logo-text-admin {
@@ -291,17 +284,8 @@ $xxl: 1400px;
     }
   }
 }
-
-// Small devices (landscape phones, from X-Small devices to 576px)
-@media only screen and (max-width: $sm) {
-  @include sm-devices;
-}
-// Small devices (landscape phones, 576px and up)
-@media (min-width: $sm) and (max-width: $md) {
-  @include sm-devices;
-}
-// Medium devices (tablets, 768px and up)
-@media (min-width: $md) and (max-width: $lg) {
+/* Small devices (portrait tablets and large phones, 600px and up) (landscape tablets, 768px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
   div#vrm-topbar {
     div#topbar-section {
       div.vrm-logo-text-admin {
@@ -396,8 +380,8 @@ $xxl: 1400px;
   }
 }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: $lg) and (max-width: $xl) {
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   div#vrm-topbar {
     div#topbar-section {
       div.vrm-logo-text-admin {
@@ -548,11 +532,6 @@ $xxl: 1400px;
     }
   }
 }
-
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: $xl) and (max-width: $xxl) {
-}
-
-// XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: $xxl) {
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }

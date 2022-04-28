@@ -451,6 +451,67 @@ div#sidebar {
     }
 
     /**
+    ** Vormia Content
+    */
+    div.vrm-content-zone,
+    section.vrm-content-zone {
+      .vrm-control {
+        display: none;
+
+        ul {
+          list-style: none;
+          padding-left: 0px;
+          li {
+            display: inline-block;
+            button,
+            a {
+              border-radius: 0px;
+
+              i.bi-arrow-clockwise,
+              i.bi-arrow-counterclockwise {
+                font-weight: bold;
+                &:hover {
+                  color: color(white);
+                }
+              }
+            }
+            button.btn-plain,
+            a.btn-plain {
+              padding: 0px;
+              border: none;
+              i {
+                font-size: 1.5rem;
+                color: color(dark-red);
+              }
+              &:hover {
+                background-color: color(transparent);
+                padding: 0px;
+                border: none;
+                color: inherit;
+                font-size: 1.5rem;
+                font-weight: 400;
+              }
+
+              &.btn-plain-active {
+                background-color: color(red);
+                border-radius: 5px;
+                i {
+                  color: color(white);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // Show Menu On Mobile
+      .vrm-control-show {
+        display: block !important;
+        width: 100% !important;
+      }
+    }
+
+    /**
     ** Vormia Pagination
     */
     div.vrm-admin-pagination {

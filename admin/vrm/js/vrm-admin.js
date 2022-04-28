@@ -91,3 +91,38 @@ if(vrmTable){
         headCheckbox.checked = footCheckbox.checked;
     });
 }
+
+// Get Button ID vrm-control #vrm-controls
+const controlBTN = document.querySelector('.vrm-control  #vrm-controls');
+
+
+if(controlBTN){
+    // Post Zone .vrm-content-zone
+    const vrmPostZone = document.querySelector('.vrm-content-zone');
+
+    // Add event listener click
+    controlBTN.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        // vrm-main-zone inside vrmPostZone | classList
+        const classList = vrmPostZone.querySelector('.vrm-main-zone').classList;
+        // vrm-control-zone inside vrmPostZone | classList
+        const classListControl = vrmPostZone.querySelector('.vrm-control-zone').classList;
+
+        // Check if classList has d-none d-md-block
+        if(classListControl.contains('vrm-control-show')){
+            // If true, remove d-none d-md-block
+            classListControl.remove('vrm-control-show');
+            classList.remove('d-none');
+            // Deactive controlBTN
+            controlBTN.classList.remove('btn-plain-active');
+        }else{
+            // Add d-none d-md-block
+            classListControl.add('vrm-control-show');
+            classList.add('d-none');
+            // Active controlBTN
+            controlBTN.classList.add('btn-plain-active');
+        }
+    });
+
+}
