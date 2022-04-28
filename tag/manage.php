@@ -97,9 +97,9 @@
 
                                             <!-- Action -->
                                             <div class="card-footer">
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <button type="button" class="btn btn-sm btn-success vrm-width-50 float-end">
+                                                <div class="row justify-content-end">
+                                                    <div class="col-5">
+                                                        <button type="button" class="btn btn-sm btn-success w-100 float-end">
                                                             <i class="bi bi-cursor-fill"></i> Add Tag
                                                         </button>
                                                     </div>
