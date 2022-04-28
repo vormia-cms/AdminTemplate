@@ -125,7 +125,7 @@
                                                                     <h4 class="card-title">Publish</h4>
                                                                 </div>
                                                                 <div class="col-2">
-                                                                    <div class="collapse-icon">
+                                                                    <div class="collapse-icon float-end">
                                                                         <i class="bi bi-caret-down-fill"></i>
                                                                     </div>
                                                                 </div>
@@ -278,8 +278,8 @@
                                                                     <h4 class="card-title">Categories</h4>
                                                                 </div>
                                                                 <div class="col-2">
-                                                                    <div class="collapse-icon">
-                                                                        <i class="bi bi-caret-down-fill"></i>
+                                                                    <div class="collapse-icon float-end">
+                                                                        <i class=" bi bi-caret-down-fill"></i>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -406,7 +406,7 @@
                                                                     <h4 class="card-title">Tags</h4>
                                                                 </div>
                                                                 <div class="col-2">
-                                                                    <div class="collapse-icon">
+                                                                    <div class="collapse-icon float-end">
                                                                         <i class="bi bi-caret-down-fill"></i>
                                                                     </div>
                                                                 </div>
@@ -465,7 +465,7 @@
                                                                     <h4 class="card-title">Post Control</h4>
                                                                 </div>
                                                                 <div class="col-2">
-                                                                    <div class="collapse-icon">
+                                                                    <div class="collapse-icon float-end">
                                                                         <i class="bi bi-caret-down-fill"></i>
                                                                     </div>
                                                                 </div>
@@ -528,7 +528,7 @@
                                                                     <h4 class="card-title">Featured Image</h4>
                                                                 </div>
                                                                 <div class="col-2">
-                                                                    <div class="collapse-icon">
+                                                                    <div class="collapse-icon float-end">
                                                                         <i class="bi bi-caret-down-fill"></i>
                                                                     </div>
                                                                 </div>
@@ -567,8 +567,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- End Main -->
                                 </div>
+                                <!-- End Main -->
                             </section>
                         </div>
                     </div>
