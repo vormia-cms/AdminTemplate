@@ -57,7 +57,7 @@ Once the system is ready for beta test, we will notify you.
 - The add code
 
 ```
-<?php $base_url = "your_project_base_url";
+<?php $base_url = "your_project_base_dir";
 ```
 
 ## License
