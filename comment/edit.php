@@ -36,13 +36,13 @@
                         <div class="page-heading">
                             <div class="page-title">
                                 <div class="row">
-                                    <div class="col-12 col-md-6 order-md-1 order-last">
+                                    <div class="col-md-6 col-sm-12">
                                         <h3>
                                             Edit Comment :
                                         </h3>
                                     </div>
-                                    <div class="col-12 col-md-6 order-md-2 order-first">
-                                        <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
+                                    <div class="col-6 d-none d-md-block">
+                                        <nav aria-label="breadcrumb" class="breadcrumb-header float-end float-lg-end">
                                             <ol class="breadcrumb">
                                                 <li class="breadcrumb-item"><a href="<?= $base_url; ?>/index.php">Dashboard</a></li>
                                                 <li class="breadcrumb-item active" aria-current="page">Comment</li>
@@ -56,12 +56,41 @@
 
                         <!-- The Page -->
                         <div class="page-content">
-                            <section class="row">
-                                <div class="col-12 col-lg-12 col-md-12">
-
-                                    <!-- Main -->
+                            <section class="vrm-content-zone">
+                                <div class="vrm-control d-block d-md-none">
                                     <div class="row">
-                                        <div class="col-md-9 col-9">
+                                        <div class="col-4">
+                                            <ul class="float-start float-lg-start">
+                                                <li>
+                                                    <a class="btn btn-sm btn-secondary">
+                                                        Preview <i class="bi bi bi-box-arrow-up-right"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="col-8">
+                                            <ul class="float-end float-lg-end">
+                                                <li>
+                                                    <button class="btn btn-sm btn-danger">Delete</button>
+                                                </li>
+                                                <li>
+                                                    <button class="btn btn-sm btn-success">Update</button>
+                                                </li>
+                                                <li>
+                                                    <button class="btn btn-sm btn-plain" id="vrm-controls">
+                                                        <i class="bi bi-grip-vertical"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Main -->
+                                <div class="vrm-content">
+                                    <div class="row">
+                                        <div class="vrm-main-zone col-lg-9 col-md-12">
                                             <div class="card">
                                                 <div class="card-body px-0">
                                                     <div class="row">
@@ -115,7 +144,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-3 col-3">
+
+                                        <div class="vrm-control-zone col-lg-3 d-none d-sm-none d-md-block">
                                             <div class="vrm-blog-tool" section-type="blog-tool">
                                                 <div class="card" order="1">
                                                     <div id="publishTool" data-bs-toggle="collapse" data-bs-target="#collapsePublish" aria-expanded="true" aria-controls="collapsePublish" role="button">
@@ -125,7 +155,7 @@
                                                                     <h4 class="card-title">Publish</h4>
                                                                 </div>
                                                                 <div class="col-2">
-                                                                    <div class="collapse-icon">
+                                                                    <div class="collapse-icon float-end">
                                                                         <i class="bi bi-caret-down-fill"></i>
                                                                     </div>
                                                                 </div>
@@ -279,11 +309,11 @@
 
                                                     <!-- Action -->
                                                     <div class="card-footer">
-                                                        <div class="row">
-                                                            <div class="col-6">
+                                                        <div class="row justify-content-between">
+                                                            <div class="col-lg-4 col-6">
                                                                 <a href="" class="vrm-color-red">Delete Comment</a>
                                                             </div>
-                                                            <div class="col-6">
+                                                            <div class="col-lg-4 col-6">
                                                                 <button type="button" class="btn btn-sm btn-success w-100">
                                                                     <i class="bi bi-cursor-fill"></i> Update
                                                                 </button>
@@ -293,12 +323,11 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- End Main -->
-
                                     </div>
                                 </div>
+                                <!-- End Main -->
+                            </section>
                         </div>
-                        </section>
                     </div>
                     <!-- End The Page -->
                 </div>

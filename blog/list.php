@@ -62,7 +62,7 @@
                         <div class="page-content">
                             <section class="vrm-content-zone">
                                 <div class="row">
-                                    <div class="col-12 col-lg-12 col-md-12">
+                                    <div class="col-12">
                                         <div class="card">
                                             <div class="card-body px-0">
                                                 <!-- Table control -->

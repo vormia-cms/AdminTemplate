@@ -239,8 +239,15 @@ $xxl: 1400px;
                     flex-wrap: wrap;
                     width: 100%;
 
-                    a {
-                      @extend .vrm-td-title-link;
+                    a,
+                    p {
+                      display: flex;
+                      flex: 0 0 auto;
+                      width: 83.33333333%;
+
+                      a {
+                        flex: auto;
+                      }
                     }
                   }
                 }
