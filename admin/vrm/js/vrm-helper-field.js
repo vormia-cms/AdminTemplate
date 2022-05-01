@@ -33,7 +33,7 @@ for (let i = 0; i < action.length; i++) {
 const addhelper = (num = 1) => {
     let helper = 
     `<div class="row vrm-helper-keys" num="${num}">
-        <div class="col-3 col-md-3">
+            <div class="col-md-3 col-sm-12">
             <div class="form-group">
                 <label for="title">Key Name</label>
                 <input type="text" class="form-control" placeholder="Helper Key" required>
@@ -41,7 +41,7 @@ const addhelper = (num = 1) => {
             </div>
         </div>
 
-        <div class="col-9 col-md-9">
+        <div class="col-md-9 col-sm-12">
             <div class="form-group">
                 <label for="title">Value</label>
                 <textarea class="form-control vrm-noresize" placeholder="Value of the Key"></textarea>
@@ -94,7 +94,7 @@ for (let i = 0; i < actionField.length; i++) {
 // Add Field Function
 const addfield = () => {
     let field = `   
-        <div class="col-2 col-md-2">
+        <div class="col-md-2 col-sm-12">
             <div class="form-group">
                 <label for="title">Key Name</label>
                 <input type="text" class="form-control form-control-sm" placeholder="Field Key" required>
@@ -102,28 +102,28 @@ const addfield = () => {
             </div>
         </div>
 
-        <div class="col-10 col-md-10">
+        <div class="col-md-10 col-sm-12">
             <div class="form-group">
                 <label for="title">Structure</label>
                 <div class="row">
-                    <div class="col-1 col-md-1">
+                    <div class="col-md-1 col-sm-12">
                         <div class="form-check form-switch vrm-checkbox-switch">
                             <input class="form-check-input vrm-checkbox-action" type="checkbox">
                             <label class="form-check-label vrm-color-dark-orange" for="">Filter </label>
                         </div>
                     </div>
-                    <div class="col-11 col-md-11">
+                    <div class="col-md-11 col-sm-12">
                         <div class="row">
-                            <div class="col-9 col-md-9 mb-1">
+                            <div class="col-md-9 col-sm-12 mb-1">
                                 <input type="text" class="form-control form-control-sm vrm-table-structure" disabled placeholder="Default varchar(255) NULL">
                             </div>
-                            <div class="col-3 col-md-3 mb-1">
+                            <div class="col-md-3 col-sm-12 mb-1">
                                 <input type="text" class="form-control form-control-sm" placeholder="Comments">
                             </div>
-                            <div class="col-4 col-md-4 mb-1">
+                            <div class="col-md-4 col-sm-12 mb-1">
                                 <input type="text" class="form-control form-control-sm" placeholder="Attributes| class='vrm-text' id='fieldID'">
                             </div>
-                            <div class="col-4 col-md-4 mb-1">
+                            <div class="col-md-4 col-sm-12 mb-1">
                                 <select class="form-select form-select-sm vrm-select-structure">
                                     <!-- input group -->
                                     <optgroup label="Default">
@@ -154,7 +154,7 @@ const addfield = () => {
                                 </select>
                             </div>
 
-                            <div class="col-4 col-md-4 mb-1">
+                            <div class="col-md-4 col-sm-12 mb-1">
                                 <input type="text" class="form-control form-control-sm vrm-match-structure" disabled placeholder="fKey(mem_email) = tableCol(user.user_email)">
                             </div>
                         </div>

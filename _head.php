@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="<?= $base_url; ?>/assets/vendors/iconly/bold.css">
 
     <link rel="stylesheet" href="<?= $base_url; ?>/assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="<?= $base_url; ?>/admin/vrm/font/bootstrap-icons-1.8.1/bootstrap-icons.css">
+
+
     <link rel="stylesheet" href="<?= $base_url; ?>/assets/css/app.css">
     <link rel="shortcut icon" href="<?= $base_url; ?>/admin/vrm/img/favicon/favicon-96x96.png" type="image/x-icon">
 
