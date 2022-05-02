@@ -46,8 +46,8 @@ Instructions on how to use them in your own application are linked below.
 
 | Plugin | README |
 | ------ | ------ |
-| Quill | [https://quilljs.com/][PlDb] |
-| Vanilla JS Datepicker | [https://mymth.github.io/vanillajs-datepicker/][PlGh] |
+| Quill | [https://quilljs.com/](https://quilljs.com/) |
+| Vanilla JS Datepicker | [https://mymth.github.io/vanillajs-datepicker/](https://mymth.github.io/vanillajs-datepicker/) |
 
 ## Updates & Installation
 
