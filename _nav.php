@@ -46,7 +46,7 @@
                         </a>
                     </li>
 
-                    <li class="sidebar-item  ">
+                    <li class="sidebar-item d-none">
                         <a href="" class='sidebar-link'>
                             <i class="bi bi-image-fill vrm-icon"></i>
                             <span>Gallery</span>
@@ -71,7 +71,7 @@
                             <li class="submenu-item ">
                                 <a href="<?= $base_url; ?>/tools/shortcode/manage.php">Shortcodes</a>
                             </li>
-                            <li class="submenu-item ">
+                            <li class="submenu-item d-none">
                                 <a href="">Widgets</a>
                             </li>
                             <li class="submenu-item ">
@@ -83,7 +83,7 @@
                         </ul>
                     </li>
 
-                    <li class="sidebar-item  has-sub">
+                    <li class="sidebar-item has-sub d-none">
                         <a href="#" class='sidebar-link'>
                             <i class="bi bi-boxes vrm-icon"></i>
                             <span>Extensions</span>
@@ -129,10 +129,10 @@
                             <span>Controls</span>
                         </a>
                         <ul class="submenu ">
-                            <li class="submenu-item ">
+                            <li class="submenu-item">
                                 <a href="<?= $base_url; ?>/access/manage.php">Access</a>
                             </li>
-                            <li class="submenu-item ">
+                            <li class="submenu-item d-none">
                                 <a href="">Themes</a>
                             </li>
                             <li class="submenu-item ">
@@ -201,7 +201,7 @@
                 <!-- separator -->
                 <hr />
 
-                <li class="sidebar-item  ">
+                <li class="sidebar-item d-none">
                     <a href="#" class='sidebar-link'>
                         <i class="bi bi-life-preserver vrm-icon"></i>
                         <span>Documentation</span>
