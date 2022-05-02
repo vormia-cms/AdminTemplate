@@ -36,13 +36,13 @@
                         <div class="page-heading">
                             <div class="page-title">
                                 <div class="row">
-                                    <div class="col-12 col-md-6 order-md-1 order-last">
+                                    <div class="col-md-6 col-sm-12">
                                         <h3>
                                             Tweaks :
                                         </h3>
                                     </div>
-                                    <div class="col-12 col-md-6 order-md-2 order-first">
-                                        <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
+                                    <div class="col-6 d-none d-md-block">
+                                        <nav aria-label="breadcrumb" class="breadcrumb-header float-end float-lg-end">
                                             <ol class="breadcrumb">
                                                 <li class="breadcrumb-item"><a href="<?= $base_url; ?>/index.php">Dashboard</a></li>
                                                 <li class="breadcrumb-item active" aria-current="page">Settings</li>
@@ -56,48 +56,50 @@
 
                         <!-- The Page -->
                         <div class="page-content vrm-sett-tweak" id="sett-tweak">
-                            <section class="row">
-                                <div class="col-8 col-lg-8 col-md-8">
-                                    <div class="card">
+                            <section class="vrm-content-zone">
+                                <div class="row">
+                                    <div class="col-md-8 col-sm-12">
+                                        <div class="card">
 
-                                        <div class="card-body px-0">
-                                            <div class="divider divider-left">
-                                                <div class="divider-text">Control</div>
-                                            </div>
+                                            <div class="card-body px-0">
+                                                <div class="divider divider-left">
+                                                    <div class="divider-text">Control</div>
+                                                </div>
 
-                                            <div class="vrm-sett-control">
-                                                <div class="row">
-                                                    <div class="col-md-5">
-                                                        <div class="form-group">
-                                                            <label for="title">Cookie Name</label>
-                                                            <input type="text" class="form-control form-control-sm" placeholder="">
+                                                <div class="vrm-sett-control">
+                                                    <div class="row">
+                                                        <div class="col-md-5 col-sm-12">
+                                                            <div class="form-group">
+                                                                <label for="title">Cookie Name</label>
+                                                                <input type="text" class="form-control form-control-sm" placeholder="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12 col-sm-12">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" name="">
+                                                                <label class="form-check-label" for="">
+                                                                    Upload to parent directory
+                                                                </label>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row">
-                                                    <div class="col-md-12 col-12">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" name="">
-                                                            <label class="form-check-label" for="">
-                                                                Upload to parent directory
-                                                            </label>
-                                                        </div>
+                                            </div>
+
+                                            <!-- Action -->
+                                            <div class="card-footer">
+                                                <div class="row justify-content-end">
+                                                    <div class="col-5">
+                                                        <button type="button" class="btn btn-sm btn-success w-100 float-end">
+                                                            <i class="bi bi-cursor-fill"></i> Save Settings
+                                                        </button>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <!-- Action -->
-                                        <div class="card-footer">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <button type="button" class="btn btn-sm btn-success vrm-width-50 float-end">
-                                                        <i class="bi bi-cursor-fill"></i> Save Settings
-                                                    </button>
-                                                </div>
-                                            </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </section>

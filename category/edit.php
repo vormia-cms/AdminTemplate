@@ -63,7 +63,7 @@
                             <section class="vrm-content-zone">
                                 <!-- Main -->
                                 <div class="row">
-                                    <div class="col-lg-9 col-md-12">
+                                    <div class="col-md-9 col-sm-12">
                                         <div class="card">
                                             <div class="card-body px-0">
                                                 <div class="row">
