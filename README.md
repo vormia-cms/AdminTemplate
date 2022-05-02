@@ -1,9 +1,9 @@
 # Vormia
-## _A PHP Laravel CMS_
+## _A Powerful CMS_
 
 [![N|Solid](https://www.smartwebkenya.com/wp-content/uploads/2018/10/logo1.png)](https://www.smartwebkenya.com/)
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://www.smartwebkenya.com/)
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=main)](https://www.smartwebkenya.com/)
 
 Vormia is a content management system with a twist. It main focus on easing developer work.
 Powered by Laravel, vormia cut the developer work load while offering many features out of the box.
