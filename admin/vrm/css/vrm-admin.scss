@@ -344,7 +344,8 @@ div#sidebar {
     /**
     ** Vormia Table
     */
-    table.vrm-table {
+    table.vrm-table,
+    table.vrm-table-default {
       // Hide this button
       .vrm-tr-more-btn {
         display: none;

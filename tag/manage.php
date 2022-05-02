@@ -58,7 +58,7 @@
                         <div class="page-content">
                             <section class="vrm-content-zone">
                                 <div class="row">
-                                    <div class="col-lg-4 col-md-12">
+                                    <div class="col-md-4 col-sm-12">
                                         <div class="card">
                                             <div class="card-title mb-1">
                                                 <h5><span>Add New Tag</span></h5>
@@ -108,7 +108,7 @@
 
                                         </div>
                                     </div>
-                                    <div class="col-lg-8 col-md-12">
+                                    <div class="col-md-8 col-sm-12">
                                         <div class="card">
                                             <div class="card-body px-0">
                                                 <!-- Table control -->
