@@ -38,7 +38,7 @@
                                 <div class="row">
                                     <div class="col-md-6 col-sm-12">
                                         <h3>
-                                            Writting :
+                                            Writing :
                                         </h3>
                                     </div>
                                     <div class="col-6 d-none d-md-block">

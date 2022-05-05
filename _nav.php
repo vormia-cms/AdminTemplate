@@ -179,7 +179,7 @@
                                 <a href="<?= $base_url; ?>/setting/robot.php">Robots</a>
                             </li>
                             <li class="submenu-item ">
-                                <a href="<?= $base_url; ?>/setting/writting.php">Writting</a>
+                                <a href="<?= $base_url; ?>/setting/writing.php">Writting</a>
                             </li>
                             <li class="submenu-item ">
                                 <a href="<?= $base_url; ?>/setting/reading.php">Reading</a>
