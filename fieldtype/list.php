@@ -296,7 +296,7 @@
                                                                         </a>
                                                                     </span>
                                                                     <span>
-                                                                        <a href="<?= $base_url; ?>/tools/helper/edit.php">
+                                                                        <a href="<?= $base_url; ?>/fieldtype/edit.php">
                                                                             <i class="bi bi-pencil"></i> Edit
                                                                         </a>
                                                                     </span>
